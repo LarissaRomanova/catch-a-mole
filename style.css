@@ -1,0 +1,59 @@
+p {
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 1s ease-out;
+  }
+  
+  .game-board {
+    display: flex;
+    width: 330px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  
+  .cell:hover {
+    background-color: #ddd;
+  }
+  
+  .message {
+    margin: 0px 0;
+    color: tomato;
+    font-weight: bold;
+    animation: .5s infinite alternate hide;
+  }
+  
+  @keyframes hide {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+  }
